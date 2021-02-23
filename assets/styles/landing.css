@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: white;
+}
+
+body {
+  min-height: 1000px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../images/photo-1514477917009-389c76a86b68.jpeg"); */
+  background-size: cover;
+  transition: background-image 0.2s linear;
+  animation: changeBG 30s ease infinite;
+}
+
+@keyframes changeBG {
+  0% {
+    background-image: url("../images/e263009764b4dc2ced84d38f60d3b11a.jpg");
+  }
+  20% {
+    background-image: url("../images/photo-1514477917009-389c76a86b68.jpeg");
+  }
+  40% {
+    background-image: url("../images/photo-1529697216570-f48ef8f6b2dd.jpeg");
+  }
+  60% {
+    background-image: url("../images/photo-1558899381-fccf8f068de9.jpeg");
+  }
+  80% {
+    background-image: url("../images/tumblr_mdob5cJ36L1rjtt2ho1_500.jpg");
+  }
+  100% {
+    background-image: url("../images/faithpink&white.jpg");
+  }
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: #ff0157;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: white;
+}
+
+.btn {
+  font-size: 1em;
+  color: black;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+/*header .sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}*/
+
+header .logo {
+  color: black;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/*header .sticky .logo {
+  color: white;
+}*/
+
+header .logo span {
+  color: #ff0157;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+  color: #ff0157;
+  transition: 0.6s;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+/*header .sticky .navigation li a {
+  color: #fff;
+}*/
+
+header .navigation li a:hover {
+  color: #ff0157;
+}
+
+section {
+  padding: 100px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .co150 {
+  position: relative;
+  width: 48%;
+}
+
+.titleText {
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.titleText span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
